@@ -1,80 +1,72 @@
-# Project-Koo-Kin
+# CPE494 ERP Systems with AI Enhancements - Take Home Quiz 2
+**Topic:** Sales Pipeline and Revenue Forecasting
 
-## Description
+This repository contains the solution for Take Home Quiz 2, focusing on Sales Pipeline Management and Revenue Forecasting for **Aurora Solutions Co., Ltd.** The project demonstrates the implementation of data calculation, mobile UI design, and management dashboard visualization.
 
-Project-Koo-Kin
-## Technologies Used
-### การใช้ git ทำใน dev เเล้วค่อย pull request to main ** สำคัญ
-   git init
+## 📂 Project Structure
 
-   git checkout (main/dev) ดึงไฟล์
+- **Task I:** Revenue Forecast Calculation (Spreadsheet & Analysis)
+- **Task II:** Mobile-Friendly Sales Agent Entry Form (UI Design)
+- **Task III:** Management Dashboard Views (Frontend Implementation)
 
-   git branch (main/dev)
-   
-   git status
-   
-   git add .
-   
-   git commit -m "xxx"
-   
-   git pull origin (main/dev)
-   
-   git push origin (main/dev)
-### Frontend (React)
+---
 
-The frontend  `src > client`,พอจะมีตัวอย่างอนู่ใน code แต่ถ้าตัวไหนไม่มีลองเองเลย
-- **[Ant Design](https://ant.design/):** A design system with an extensive set of UI components for React.
-- **[Axios](https://axios-http.com/):** A promise-based HTTP client for making API requests from the browser.
-- **[Flowbite](https://flowbite.com/):** A library of UI components built on Tailwind CSS.
-- **[Flowbite React](https://flowbite-react.com/):** Flowbite components tailored for React apps.
-- **[Framer Motion](https://www.framer.com/motion/):** An animation library for smooth transitions and animations in React.
-- **[GSAP](https://greensock.com/gsap/):** A JavaScript animation library that allows you to create high-performance animations.
-- **[Moment.js](https://momentjs.com/):** A popular date manipulation library for parsing, validating, and formatting dates.
-- **[React Router](https://reactrouter.com/):** A declarative routing library for creating navigation between components.
-- **[React Scroll](https://www.npmjs.com/package/react-scroll):** A simple library for adding smooth scroll functionality to React.
-- **[React Scroll To Top](https://www.npmjs.com/package/react-scroll-to-top):** A component that allows users to scroll back to the top of the page.
-- **[React Spinners](https://www.npmjs.com/package/react-spinners):** A collection of loading spinner components for React.
-- **[React Transition Group](https://reactcommunity.org/react-transition-group/):** Provides animations when components enter or exit the DOM.
-- **[SweetAlert2](https://sweetalert2.github.io/):** A library for customizable popup boxes, making user interactions more engaging.
-- **[Swiper](https://swiperjs.com/):** A modern, touch-enabled slider component for web and mobile applications.
+## 🚀 Task I: Revenue Forecast Calculation
 
-### Backend (Express)
+Calculated the total projected revenue for **January 2026** based on the probability of opportunities in the sales pipeline.
 
-The backend, located in `src > server > main`, backend ลองให้ดูน่าจะยากอ่ะ ลองดูเองก่อนนะ เดี๋ยวมาช่วย ไม่ก็ลองถาม ลูกพี่ Gpt ก่อนเลย ไม่ก็ลองไปเล่น frontend	ดูก่อนจะได้เห็นภาพ
-- **[Bcrypt.js](https://github.com/dcodeIO/bcrypt.js):** A password-hashing library to enhance security.
-- **[Body-Parser](https://www.npmjs.com/package/body-parser):** Middleware for parsing incoming HTTP request bodies.
-- **[CORS](https://www.npmjs.com/package/cors):** Middleware that enables Cross-Origin Resource Sharing for the API.
-- **[Cross-Env](https://www.npmjs.com/package/cross-env):** A utility to handle environment variables across different platforms.
-- **[Express](https://expressjs.com/):** A minimal web framework for building backend services in Node.js.
-- **[JSON Web Token](https://jwt.io/):** A secure method for transmitting information between the backend and frontend.
-- **[Multer](https://www.npmjs.com/package/multer):** A middleware for handling file uploads in Express applications.
-- **[MySQL2](https://www.npmjs.com/package/mysql2):** A fast and secure MySQL client for interacting with MySQL databases.
-- **[Mongoose](https://mongoosejs.com/):** A library for modeling MongoDB data within Node.js applications.
+- **Methodology:** `Expected Value = Estimated Value × Probability`
+- **Result:** The total projected revenue for Jan 2026 is **1,516,000 THB**.
+- **Data Source:** [Google Sheets - Master Sales Data](https://docs.google.com/spreadsheets/d/1zLKuf-D_0ihwdHSkCnWaFbah9ZcdDqcthueRxG2me3A/edit?usp=sharing)
 
- https://github.com/SOtwoX1/Project-SE.git
+---
 
-Follow these steps to set up the project:
+## 📱 Task II: Mobile Sales Agent Entry Form
 
-### Installation
+Designed a mobile-friendly user interface for sales agents to enter and update opportunity data on-site.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/SOtwoX1/Project-SE.git
-   cd project-se
+### Key Features:
+- **Responsive Design:** Optimized for mobile screens with a vertical stack layout.
+- **Smart Logic:** The `Probability` field automatically updates based on the selected `Status`.
+- **User Experience:** Includes numeric keypads for value entry and date pickers for month selection.
 
-2. Install dependencies: Navigate to both the frontend and backend directories and install the required packages:
-    ```bash
-    # For the backend frontend
-      npm install antd axios flowbite flowbite-react framer-motion gsap moment react-router-dom react-scroll react-scroll-to-top react-spinners react-transition-group sweetalert2 swiper bcryptjs body-parser cors cross-env express jsonwebtoken multer mysql2 mongoose react-slick @mui/material @emotion/react @emotion/styled slick-carousel node-cron browser-image-compression
+*(Images/Mockups of the UI are included in the repository)*
 
+---
 
-3. Start dev server:
+## 📊 Task III: Management Dashboard
 
-    ```env
-        npm run dev
-    
-Run the application:
+Developed a modern, responsive frontend dashboard using **React**, **Tailwind CSS**, and **Recharts**.
 
+### 1. Monthly Revenue Forecast (Company Level)
+A comprehensive view displaying:
+- **Actual Revenue:** Past 9 months (Apr 2025 - Dec 2025) shown in dark blue.
+- **Forecasted Revenue:** Next 3 months (Jan 2026 - Mar 2026) shown in light blue/cyan.
+- **Tech Stack:** Recharts (ComposedChart), Framer Motion (for entrance animations).
 
-This command will start both the frontend and backend. Open your browser and navigate to http://localhost:3000 to view the application.
+### 2. Sales Performance by Staff
+A dynamic multi-bar chart comparing sales performance across agents (Ananya, Pimchanok, Nattapon).
+- **Interactive:** Management can toggle specific sales staff to compare performance.
+- **Timeframe:** 5-month window (3 months actual + 2 months forecast).
+- **Visual Cues:** Distinct colors for each staff and background highlighting for forecasted months.
 
+---
+
+## 🛠️ Technology Stack (Frontend)
+
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Charts:** Recharts
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+
+## 🔗 Links & Resources
+
+- **GitHub Repository:** [SOtwoX1/CPE494-ERP_WEB](https://github.com/SOtwoX1/CPE494-ERP_WEB)
+- **Excel Calculation:** [Google Sheets Link](https://docs.google.com/spreadsheets/d/1zLKuf-D_0ihwdHSkCnWaFbah9ZcdDqcthueRxG2me3A/edit?usp=sharing)
+
+---
+
+**Student Info:**
+* **Name:** Siratee Saiprom
+* **Student ID:** 65070507227
