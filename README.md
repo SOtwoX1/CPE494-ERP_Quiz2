@@ -30,8 +30,6 @@ Designed a mobile-friendly user interface for sales agents to enter and update o
 - **Smart Logic:** The `Probability` field automatically updates based on the selected `Status`.
 - **User Experience:** Includes numeric keypads for value entry and date pickers for month selection.
 
-*(Images/Mockups of the UI are included in the repository)*
-
 ---
 
 ## 📊 Task III: Management Dashboard
@@ -70,3 +68,4 @@ A dynamic multi-bar chart comparing sales performance across agents (Ananya, Pim
 **Student Info:**
 * **Name:** Siratee Saiprom
 * **Student ID:** 65070507227
+
